@@ -1,0 +1,12 @@
+{
+  "name": "Google-Meet-Hand-Lower-inator",
+  "version": "0.0.1",
+  "description": "Automatically lower your hand in Google Meet when you start talking",
+  "scripts": {
+    "dev": "webextension-toolbox dev",
+    "build": "webextension-toolbox build"
+  },
+  "devDependencies": {
+    "webextension-toolbox": "latest"
+  }
+}
