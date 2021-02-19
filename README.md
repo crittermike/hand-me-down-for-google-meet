@@ -22,8 +22,4 @@ Automatically lower your hand in Google Meet when you start talking
 
 ## Environment
 
-The build tool also defines a variable named `process.env.NODE_ENV` in your scripts. 
-
-## Docs
-
-* [webextension-toolbox](https://github.com/HaNdTriX/webextension-toolbox)
+The build tool also defines a variable named `process.env.NODE_ENV` in your scripts.
