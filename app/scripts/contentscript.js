@@ -90,7 +90,11 @@ const volumeAudioProcess = (event) => {
     }
     this.clip = clipcount / input.length;
 
-    if (this.average > 0.03 && handIsRaised) {
+    // The 0.02 here is super arbitrary. That just seems to be the right
+    // balance between not making you yell into the mic and not accidentally
+    // triggering from background noise. Long term, it would make
+    // sense to add a settings page to control volume sensitivity.
+    if (this.average > 0.02 && handIsRaised) {
         handIsRaised = false;
         handButton.click();
     }
