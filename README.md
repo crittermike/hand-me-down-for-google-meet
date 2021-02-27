@@ -1,4 +1,4 @@
-# Google Meet Hand Lower-inator
+# Hand-me-down for Google Meet
 
 Automatically lower your hand in Google Meet when you start talking
 
