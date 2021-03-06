@@ -1,4 +1,4 @@
-# Google Meet Hand Lower-inator
+# Hand-me-down for Google Meet
 
 Automatically lower your hand in Google Meet when you start talking
 
@@ -15,6 +15,10 @@ Automatically lower your hand in Google Meet when you start talking
 
 ## Build
 
+    # Generate packages for all browser in one command:
+    npm run build-all
+    
+    # Or, package them up one by one:
     npm run build chrome
     npm run build firefox
     npm run build opera
