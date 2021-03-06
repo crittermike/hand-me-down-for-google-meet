@@ -63,6 +63,11 @@ const createVolumeWatcher = (audioContext) => {
 // substantial, meaning we should lower their hand, instead of just a 1-word repsonse
 // which probably doesn't need hand lowering.
 const volumeAudioProcess = (event) => {
+    const isMuted = document.querySelector('[data-is-muted="true"]')
+    if (isMuted) {
+        return;
+    }
+
     const input = event.inputBuffer.getChannelData(0);
     let i;
     let sum = 0.0;

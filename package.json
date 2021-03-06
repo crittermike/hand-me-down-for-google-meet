@@ -1,10 +1,11 @@
 {
-  "name": "Google-Meet-Hand-Lower-inator",
-  "version": "0.0.1",
+  "name": "Hand-me-down for Google Meet",
+  "version": "0.0.3",
   "description": "Automatically lower your hand in Google Meet when you start talking",
   "scripts": {
     "dev": "webextension-toolbox dev",
-    "build": "webextension-toolbox build"
+    "build": "webextension-toolbox build",
+    "build-all": "npm run build chrome && npm run build firefox && npm run build edge && npm run build opera"
   },
   "devDependencies": {
     "webextension-toolbox": "latest"
