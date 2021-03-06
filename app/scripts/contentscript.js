@@ -26,7 +26,12 @@ const waitForVideoCall = setInterval(() => {
 }, 500)
 
 // Wire up the mic listener. This is the only reliable way to tell if the user
-// has started talking, in which case we should lower their hand.
+// has started talking, in which case we should lower their hand. You'd think
+// that we could watch the little soundwave icon in Google Meet, but there is
+// no reliable markup on that element for us to grab onto. You may also think
+// that Meet itself fires an event when you start talking which would trigger
+// the soundwave icon to start soundwave-ing, but I couldn't track that down
+// in the minified and obfuscated code.
 const startListening = () => {
     if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
         navigator.mediaDevices.getUserMedia({ audio: true }).then((stream) => {
